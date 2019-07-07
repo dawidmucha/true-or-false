@@ -1,19 +1,13 @@
-import React, { useContext } from 'react'
-import Context from './context/Context'
+import React from 'react'
 
-const SecondInput = () => {
-	const context = useContext(Context)
-
-	const _onChange = (e) => {
-		context[2] = e.target.value
-		console.log(context)
+class SecondInput extends React.Component {
+	render() {
+		return (
+			<>
+				<input type='text' onChange={(e) => this.props.getValue(e.target.value)} />
+			</>
+		)
 	}
-
-	return (
-		<>
-			<input type='text' onChange={(e) => _onChange(e)} />
-		</>
-	)
 }
 
 export default SecondInput

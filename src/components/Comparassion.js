@@ -1,26 +1,20 @@
-import React, { useContext } from 'react'
-import Context from './context/Context'
+import React from 'react'
 
-const Result = () => {
-	const context = useContext(Context)
-
-	const _onChange = (e) => {
-		context[1] = e.target.value
-		console.log(context)
+class Comparassion extends React.Component {
+	render() {
+		return (
+			<select onChange={(e) => this.props.getValue(e.target.value)}>
+				<option value='lt'>&lt;</option>
+				<option value='gt'>&gt;</option>
+				<option value='loet'>&lt;=</option>
+				<option value='goet'>&gt;=</option>
+				<option value='e'>==</option>
+				<option value='se'>===</option>
+				<option value='i'>!=</option>
+				<option value='si'>!==</option>
+			</select>
+		)
 	}
-	
-	return (
-		<select onChange={(e) => _onChange(e)}>
-			<option>&lt;</option>
-			<option>&gt;</option>
-			<option>&lt;=</option>
-			<option>&gt;=</option>
-			<option>&lt;==</option>
-			<option>&gt;==</option>
-			<option>==</option>
-			<option>===</option>
-		</select>
-	)
 }
 
-export default Result
+export default Comparassion

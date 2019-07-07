@@ -15,17 +15,24 @@ class App extends React.Component {
   }
 
   getValueFromFirstInput = (data) => {
-    this.setState({fi: data});
-    console.log(this.state)
+    this.setState({fi: data})
+  }
+
+  getValueFromComparassion = (data) => {
+    this.setState({co: data})
+  }
+
+  getValueFromSecondInput = (data) => {
+    this.setState({se: data})
   }
 
   render() {
     return (
       <>
         <FirstInput getValue={this.getValueFromFirstInput.bind(this)} />
-        <Comparassion />
-        <SecondInput />
-        <Result />
+        <Comparassion getValue={this.getValueFromComparassion.bind(this)} />
+        <SecondInput getValue={this.getValueFromSecondInput.bind(this)} />
+        <Result fi={this.state.fi} co={this.state.co} se={this.state.se} />
       </>
     );
   }
