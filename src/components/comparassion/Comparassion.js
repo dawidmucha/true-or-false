@@ -1,4 +1,5 @@
 import React from 'react'
+import './comparassion.css'
 
 class Comparassion extends React.Component {
 	render() {

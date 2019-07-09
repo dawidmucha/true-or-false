@@ -1,0 +1,16 @@
+select {
+  border: 1px solid #bbbbbb;
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  font-size: 4rem;
+  text-align: center;
+  text-align-last: center;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat #eeeeee;
+  background-size: 10%;
+  -webkit-appearance: none;
+  background-position-x: 4.5rem;
+  background-position-y: 8rem;
+}
+/*# sourceMappingURL=comparassion.css.map */

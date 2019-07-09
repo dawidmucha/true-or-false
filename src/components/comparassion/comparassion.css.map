@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,iBAAiB;EACzB,aAAa,EAAE,MAAM;EACrB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,oFAAoF,CAAC,SAAS,CAAC,OAAO;EAClH,eAAe,EAAE,GAAG;EACpB,kBAAkB,EAAE,IAAI;EACxB,qBAAqB,EAAE,MAAM;EAC7B,qBAAqB,EAAE,IAAI;CAC3B",
+    "sources": [
+        "comparassion.scss"
+    ],
+    "names": [],
+    "file": "comparassion.css"
+}

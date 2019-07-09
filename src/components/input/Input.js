@@ -1,6 +1,7 @@
 import React from 'react'
+import './input.css'
 
-class FirstInput extends React.Component {
+class Input extends React.Component {
 	render() {
 		return (
 			<>
@@ -10,4 +11,4 @@ class FirstInput extends React.Component {
 	}
 }
 
-export default FirstInput
+export default Input
