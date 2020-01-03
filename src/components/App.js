@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       fi: '', // first input
-      co: 'lt', // comparassion
+      co: '<', // comparassion
       se: ''  // second input
     }
   }
