@@ -4,28 +4,29 @@ import './results.css';
 const Results = (props) => {
 	const result = (props) => {
 		try {
+			console.log(props.fi, props.co, props.se)
 			switch(props.co) {
 				case 'lt':
-					return eval(eval(props.fi) < eval(props.se))
+					return window.Function(`return(${props.fi} < ${props.se})`)()
 				case 'gt':
-					return eval(eval(props.fi) > eval(props.se))
+					return window.Function(`return(${props.fi} > ${props.se})`)()
 				case 'loet':
-					return eval(eval(props.fi) <= eval(props.se))
+					return window.Function(`return(${props.fi} <= ${props.se})`)()
 				case 'goet':
-					return eval(eval(props.fi) >= eval(props.se))
+					return window.Function(`return(${props.fi} >= ${props.se})`)()
 				case 'e': //eslint-disable-next-line
-					return eval(eval(props.fi) == eval(props.se))
+				return window.Funcitin(`return(${props.fi} = ${props.se})`)()
 				case 'se':
-					return eval(props.fi) === eval(props.se)
+					return window.Function(`return(${props.fi} == ${props.se})`)()
 				case 'i': //eslint-disable-next-line
-					return eval(eval(props.fi) != eval(props.se))
+				return window.Function(`return(${props.fi} != ${props.se})`)()
 				case 'si':
-					return eval(eval(props.fi) !== eval(props.se))
+					return window.Function(`return(${props.fi} !== ${props.se})`)()
 				default:
-					return '' 
+					return 'invalid inputs' 
 			}
 		} catch(e) {
-			return ''; // prevents app from crashing, god bless this line
+			return 'invalid inputs';
 		}
 	}
 
